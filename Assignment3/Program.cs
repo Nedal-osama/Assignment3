@@ -20,14 +20,7 @@ namespace Assignment3
             typeB.fun1();
             typeB.fun2();
             #endregion
-            #region Binding
-
-            TypeA RefBase=new TypeB(1,2);
-            RefBase.A = 3;
-         //   RefBase.B= 4;  invalid
-            RefBase.fun1();
-            RefBase.fun2();
-            #endregion
+           
         }
     }
 }
