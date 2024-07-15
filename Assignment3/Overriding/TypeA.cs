@@ -34,5 +34,43 @@ namespace Assignment3.Overriding
         {
             Console.WriteLine("I am BAse");
         }
+        public new void fun2()
+        {
+            Console.WriteLine($"B={B}");
+        }
+    }
+    public class TypeC : TypeB
+    {
+        public int C { get; set; }
+        public TypeC(int _A,int _B,int _c):base(_A,_B)
+
+        {
+            C= _c;
+
+        }
+        public  new void fun1()
+        {
+            Console.WriteLine("I am grad chiled");
+        }
+        public interface Example
+        {
+            void DisplayInfo();
+            int Calculate(int a, int b);
+        }
+
+        public class ExampleClass : Example
+        {
+            public void DisplayInfo()
+            {
+                Console.WriteLine("This is an example class implementing IExample.");
+            }
+
+            public int Calculate(int a, int b)
+            {
+                return a + b;
+            }
+        }
+    }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Assignment3.Binding;
 using Assignment3.Overriding;
+using static Assignment3.Overriding.TypeC;
 
 namespace Assignment3
 {
@@ -49,6 +50,22 @@ namespace Assignment3
             emp.salary = 50000;
             #endregion
 
+            #region More practise binding
+            /*    TypeA typeA1 = new TypeC(1,2,3);
+                typeA1.A = 3;
+              //  typeA1.B = 1;
+                //typeA1.C=1
+                typeA1.fun1();
+                typeA1.fun2();
+              */
+            #endregion
+
+            #region interface
+            Example ex = new ExampleClass();
+            ex.DisplayInfo();
+            int result = ex.Calculate(5, 3);
+            Console.WriteLine($"Calculation Result: {result}");
+            #endregion
         }
     }
 }
